@@ -1,0 +1,45 @@
+:root {
+
+  --bg: #ffffff;
+  --text: #702c17;
+  --accent: #0055ff;
+
+  --font-main: 'Chillax-Light';
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.cover {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.article {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.backcover {
+  margin-top: 60px;
+  text-align: center;
+}
