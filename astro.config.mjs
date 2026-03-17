@@ -1,5 +1,8 @@
 import { defineConfig } from 'astro/config';
 
+import cloudflare from "@astrojs/cloudflare";
+
 export default defineConfig({
-  site: "https://armadillo.ink"
+  site: "https://armadillo.ink",
+  adapter: cloudflare()
 });
