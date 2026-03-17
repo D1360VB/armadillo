@@ -2,7 +2,8 @@
 const {
 title,
 bg = "#ffffff",
-color = "#000000"
+color = "#000000",
+author
 } = Astro.props;
 ---
 
@@ -11,6 +12,7 @@ style={`background:${bg}; color:${color}`}
 >
 
 <h3>{title}</h3>
+<h4>-{author}</h4>
 
 <slot />
 

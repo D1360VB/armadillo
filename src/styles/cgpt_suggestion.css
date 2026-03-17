@@ -1,0 +1,163 @@
+:root {
+
+  --bg: #f5f5f5;
+  --paper: #ffffff;
+  --text: #111111;
+  --accent: #7f94f2;
+  --red: #702c17;
+
+  --font-main: 'Chillax-Light';
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--bg);
+  color: var(--text);
+}
+
+
+/* ========================= */
+/* CONTENEDOR GENERAL */
+/* ========================= */
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.logo {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.logo img {
+  width: 120px;
+  opacity: 0.9;
+}
+
+
+/* ========================= */
+/* PORTADA */
+/* ========================= */
+
+.cover {
+  text-align: center;
+  padding: 100px 20px 80px;
+}
+
+.cover h1 {
+  font-size: 64px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.cover p {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+
+/* ========================= */
+/* SECCIONES */
+/* ========================= */
+
+.section {
+  margin-top: 80px;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+
+/* ========================= */
+/* GRID DE ARTICULOS */
+/* ========================= */
+
+.section {
+  display: block;
+}
+
+.section > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+
+/* ========================= */
+/* ARTICULO */
+/* ========================= */
+
+.article {
+  background: var(--paper);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+
+
+.article h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.article p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.right-aligned-text {
+    text-align: right; 
+    color: #702c17;/* Aligns the text to the right edge */
+    font-family: 'Chillax-Medium';
+}
+
+.article img {
+  margin-top: 15px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+
+/* ========================= */
+/* BACK COVER */
+/* ========================= */
+
+.backcover {
+  margin-top: 120px;
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 800px) {
+
+  .section > div {
+    grid-template-columns: 1fr;
+  }
+
+  .cover h1 {
+    font-size: 40px;
+  }
+
+}
